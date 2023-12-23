@@ -1,0 +1,57 @@
+*{
+   box-sizing: border-box;
+}
+body{
+   color: #ddd;
+   background-color: #121216;
+}
+main{
+   width: 360px;
+   margin: 50px auto;
+}
+h1{
+   text-align: center;
+   margin: 0;
+}
+form input{
+   width: 100%;
+}
+form div.basic{
+   display: flex;
+   gap: 7px;
+}
+
+.transaction{
+   display: flex;
+   justify-content: space-between;
+   border-top:  1px solid #30313d;
+
+   .name{
+      font-size: 1.1rem;
+   }
+   .description{
+      font-size: 0.8rem;
+   }
+
+   .right{
+      text-align: right;
+
+      .price{
+         font-size: 1.1rem;
+      }
+      .price.green{
+         color: green;
+      }
+      .price.red{
+         color: red;
+      }
+
+      .datetime{
+         font-size: 0.8rem;
+      }
+
+   }
+}
+.transaction:first-child{
+   border-top: 0;
+}
